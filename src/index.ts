@@ -1,0 +1,9 @@
+import { add } from '@src/math/add';
+import dotenv from 'dotenv';
+// load the environment variables from the .env file
+dotenv.config({
+  path: '.env',
+});
+
+console.log(process.env.APP_PORT);
+console.log(add(1, 2));
